@@ -129,7 +129,7 @@ body {
             let url = `chrome-extension://${id}/tt-alert.svg`;
             fetch(url).then(() => resolve(true));
           }
-          setTimeout(() => resolve(true), 500);
+          setTimeout(() => resolve(false), 500);
         });
       }
 
